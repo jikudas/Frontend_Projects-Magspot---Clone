@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --body-font: 'Roboto', Arial, sans-serif;
+  --menu-font: 'Roboto', Arial, sans-serif;
+  --title-font: 'Roboto', Arial, sans-serif;
+  --text-font: 'Roboto', Arial, sans-serif;
+  --body-bg-color: #f5f6f7;
+  --body-bg: #f5f6f7 none repeat fixed top left;
+  --outer-bg: #f5f6f7;
+  --main-color: #fd3a13;
+  --title-color: #16161a;
+  --title-hover-color: #fd3a13;
+  --meta-color: #97979d;
+  --text-color: #626262;
+  --tag-bg: #fd3a13;
+  --tag-color: #ffffff;
+  --topbar-bg: #16161a;
+  --topbar-color: #ffffff;
+  --topbar-hover-color: #fd3a13;
+  --header-bg: #ffffff;
+  --header-color: #16161a;
+  --header-hover-color: #fd3a13;
+  --submenu-bg: #ffffff;
+  --submenu-color: #16161a;
+  --submenu-hover-color: #fd3a13;
+  --mega-bg: #ffffff;
+  --mega-color: #16161a;
+  --mega-hover-color: #fd3a13;
+  --mega-meta-color: #97979d;
+  --mobilemenu-bg: #ffffff;
+  --mobilemenu-color: #16161a;
+  --mobilemenu-hover-color: #fd3a13;
+  --ticker-title-color: #fd3a13;
+  --ticker-color: #16161a;
+  --ticker-hover-color: #fd3a13;
+  --widget-bg: #ffffff;
+  --widget-title-color: #16161a;
+  --widget-dash-color: #fd3a13;
+  --video-widget-bg: #16161a;
+  --video-widget-color: #ffffff;
+  --video-widget-hover-color: #fd3a13;
+  --video-widget-meta-color: #AAAAAA;
+  --footer-bg: #16161a;
+  --footer-color: #ffffff;
+  --footer-hover-color: #fd3a13;
+  --footer-meta-color: #AAAAAA;
+  --footer-text-color: #AAAAAA;
+  --footerbar-bg: #09090a;
+  --footerbar-color: #ffffff;
+  --footerbar-hover-color: #fd3a13;
+  --cookie-bg: #ffffff;
+  --cookie-color: #626262;
+  --button-bg: #fd3a13;
+  --button-color: #ffffff;
+  --button-hover-bg: #e33411;
+  --button-hover-color: #ffffff;
+  --light-weight: 400;
+  --title-weight: 700;
+  --gray-bg: rgba(155, 155, 155, 0.05);
+  --border-color: rgba(155, 155, 155, 0.1);
+  --radius: 2px;
+  --widget-shadow: 0 0 5px rgba(0, 0, 0, 0.01);
+  --avatar-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+  background: #F5F6F7;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* =============================
+        Navbar CSS
+============================= */
+
+/* .section-1-div-1::after {
+  content: '';
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  width: 95%;
+  height: 50%;
+  align-items: center;
+  box-shadow: inset 120px 100px 250px #000;
+  z-index: 1;
+} */

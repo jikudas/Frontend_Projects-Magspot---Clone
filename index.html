@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Magspot Clone</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Icons Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <style>
+    .container-small {
+      max-width: 960px;
+    }
+
+    .section-1-button::before {
+      margin-top: 200px;
+      padding-top: 200px;
+    }
+
+    div>a>img.image-2 {
+      overflow: hidden;
+    }
+
+    /* .section-1-overlay-1::after {
+      content: '';
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 2%;
+      width: 95%;
+      height: 100%;
+      z-index: 1;
+    } */
+
+    /* .section-1-overlay-2::after {
+      content: '';
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: -11px;
+      width: 100%;
+      height: 55%;
+      z-index: 1;
+    } */
+
+    /* .section-1-overlay-3::after {
+      content: '';
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    } */
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <div style="width: 15%">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" class="w-100 h-100" alt="logo"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mr-auto">
+          <ul class="navbar-nav " style="font-size: .8rem">
+            <li class="nav-item active px-2 ">
+              <a class="nav-link text-dark font-weight-bold" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link text-dark font-weight-bold" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                FEATURES <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link text-dark font-weight-bold" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                MEGA MENU <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link text-dark font-weight-bold" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                MEGA TABS <i class="bi bi-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark font-weight-bold" href="#">TIPOGRAPHY</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-dark font-weight-bold" href="#">SHORTCODES</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form class="form-inline my-2 my-lg-0">
+            <i class="bi bi-brightness-high-fill mr-2"></i>
+            <a href="#"><i class="bi bi-search"></i></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Trending Section -->
+  <div class="container d-flex   my-5 bg-white mx-auto">
+    <div class=d-flex mr-auto p-2">
+      <p class="mt-1 text-danger" style="font-size: .7rem; letter-spacing: 1px;">TRENDING</p>
+      <i class="bi bi-chevron-right mt-1 ml-.8" style="font-size: .6rem;"></i>
+      <p class="pl-3" style="color: #999">How We Know Disinfectants Should Kill the Covid-19</p>
+    </div>
+    <div class="">
+      <a class="font-weight-bold" href="#"><i class="bi bi-chevron-left" style="font-size: .6rem;"></i></a>
+      <a class="" href="#"><i class="bi bi-chevron-right" style="font-size: .6rem;"></i></a>
+    </div>
+  </div>
+
+  <!-- Top Section -->
+  <div class="container p-4 bg-white">
+    <div class="row">
+      <div class="col-6 pr-0 pl-4 section-1-overlay-1">
+        <div class="row w-100 h-100" style="max-height: 400px;">
+          <a href="#" class="w-100 h-100">
+            <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+            <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+              <button type="button" class="btn btn-danger pt-1 section-1-button"
+                style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+              <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on Budget
+              </h4>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-6 pl-1 pr-4 w-100">
+        <div class="row mb-1 section-1-overlay-2" style="max-height: 200px; overflow:hidden;">
+          <a href="#" class="h-100 w-100">
+            <img src="img/section_2_img.jpg" class="w-100 h-100 img-fluid image-2" alt="">
+            <div class="position-absolute mb-3 text-white" style="top: 27%; left:1%; z-index: 10;">
+              <button type="button" class="btn btn-danger pt-1 section-1-button"
+                style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">LAPTOPS</button>
+              <h5 class="pt-2 text-white" style="display: block; width:100%;">11 of Best Laptops Evaluated Based on
+                Budget
+              </h5>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-6 p-0 section-1-overlay-3">
+            <a href="#" class="h-100 w-100">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 50%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">LAPTOPS</button>
+                <h6 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h6>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 p-0 pl-1 section-1-overlay-3">
+            <a href="#" class="">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 50%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h6 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h6>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section with Sidebar -->
+  <div class="container d-flex mt-4 px-0">
+    <div class="col-9 mr-1">
+
+      <!-- World News Section -->
+      <div class="row p-3 d-flex justify-content-center mb-3 bg-warning">
+        <div class="row">
+          <h6 class="">WORLD NEWS</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+
+          <!-- Left Section with Full Image -->
+          <div class="col-6">
+            <a href="#" class="">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h4>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Section with four posts -->
+          <div class="col-6">
+            <div class="row pb-4">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row pb-4">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row pb-4">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span class="">July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row pb-4">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reviews Section -->
+      <div class="row p-4 d-flex justify-content-center bg-warning">
+        <div class="row">
+          <h6 class="">REVIEWS</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+          <div class="row">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gadgets and Laptops Section -->
+      <div class="row mt-3 d-flex justify-content-around">
+        <div class="col-6 bg-warning p-4">
+          <div class="row ">
+            <h6 class="">GADGETS</h6>
+            <h6>View all</h6>
+          </div>
+          <div class="row">
+            <a href="#" class="">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h4>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+            <div class="row p-3">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row p-3">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row p-3" style="padding-bottom: 0px !important;">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 bg-primary p-4">
+          <div class="row">
+            <h6 class="">LAPTOPS</h6>
+            <h6>View all</h6>
+          </div>
+          <div class="row justify-content-center">
+            <a href="#" class="">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h4>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+            <div class="row p-3">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row p-3">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+            <div class="row p-3" style="padding-bottom: 0px !important;">
+              <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+              <div class="w-75" style="padding-right: 15%;">
+                <a href="#" class="h6 ">
+                  How We Know Disinfectants Should Kill the Covid-19
+                </a>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Posts Section -->
+      <div class="row p-4 mt-3 d-flex justify-content-center bg-warning">
+        <div class="row">
+          <h6 class="">LATEST POSTS</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+        </div>
+        <p class="">load more</p>
+      </div>
+
+      <!-- Videos Section -->
+      <div class="row p-4 mt-3 d-flex justify-content-center bg-warning">
+        <div class="row">
+          <h6 class="">VIDEOS</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+          <!-- Left Section with Full Image -->
+          <div class="col-6">
+            <a href="#" class="">
+              <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h4>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right Side with cards -->
+          <div class="col-6">
+            <div class="row d-flex">
+              <div class="col-6">
+                <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+                <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+                <span>July 31, 2021</span>
+              </div>
+              <div class="col-6">
+                <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+                <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+
+            <div class="row d-flex">
+              <div class="col-6">
+                <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+                <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+                <span>July 31, 2021</span>
+              </div>
+              <div class="col-6">
+                <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+                <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+                <span>July 31, 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consoles Section -->
+      <div class="row p-4 mt-3 d-flex justify-content-between bg-warning">
+        <div class="row">
+          <h6 class="ml-3">CONSOLES</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+          <div class="row d-flex">
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+
+          <div class="row d-flex">
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Section -->
+      <div class="row p-4 mt-3 d-flex justify-content-center bg-warning">
+        <div class="row">
+          <h6 class="">MOBILE</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row">
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="w-100 h-100" alt="">
+            </div>
+            <div class="col-8">
+              <h4>11 of Best Laptops Evaluated Based on Budget</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, eum! Lorem ipsum dolor sit amet
+                consectetur,
+                adipisicing elit. Explicabo, animi?
+                Perferendis architecto quidem dolorem at officia. Ea eveniet alias eum?</p>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car News Section -->
+      <div class="row p-4 mt-3 d-flex justify-content-between bg-warning">
+        <div class="row">
+          <h6 class="ml-3">CAR NEWS</h6>
+          <h6>View all</h6>
+        </div>
+        <div class="row p-4">
+          <div class="row mb-4 section-1-overlay-3" style="max-height: 300px">
+            <a href="#" class="w-100 h-100">
+              <img src="img/section_2_img.jpg" class="w-100 h-100 img-fluid" alt="">
+              <div class="position-absolute mb-3 text-white" style="top: 50%; left:5%; z-index: 10;">
+                <button type="button" class="btn btn-danger pt-1 section-1-button"
+                  style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+                <h6 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                  Budget
+                </h6>
+                <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="row d-flex">
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-4">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+
+      <!-- Follow Us Section -->
+      <div class="row p-4 bg-warning">
+        <h6 class="ml-3 w-100">CAR NEWS</h6>
+        <ul class="mt-3 d-flex" style="list-style: none;">
+          <li><a href="#" class="w-50">Facebook</a></li>
+          <li><a href="#" class="w-50 pl-5">Twitter</a></li>
+        </ul>
+        <ul class="mt-1 d-flex mb-0" style="list-style: none;">
+          <li><a href="#" class="w-50">Facebook</a></li>
+          <li><a href="#" class="w-50 pl-5">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Posts Section -->
+      <div class="row p-4 mt-3 bg-warning">
+        <div class="row ">
+          <h6 class="">POPULAR POSTS</h6>
+        </div>
+        <div class="row">
+          <a href="#" class="">
+            <img src="img/section_2_img.jpg" class="w-100 h-100" alt="">
+            <div class="position-absolute mb-3 text-white" style="top: 65%; left:5%; z-index: 10;">
+              <button type="button" class="btn btn-danger pt-1 section-1-button"
+                style="background: #FD3A13; width: 3.2rem; height: 1.3rem; font-size: .6rem;">APPLE</button>
+              <h4 class="pt-2 text-white" style="display: block; width:90%">11 of Best Laptops Evaluated Based on
+                Budget
+              </h4>
+              <span class="">by</span><span>John Doe</span><span>-</span><span>August 02, 2021</span>
+            </div>
+          </a>
+          <div class="row p-3">
+            <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+            <div class="w-75">
+              <a href="#" class="h6 ">
+                How We Know Disinfectants Should Kill the Covid-19
+              </a>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+          <div class="row p-3">
+            <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+            <div class="w-75">
+              <a href="#" class="h6 ">
+                How We Know Disinfectants Should Kill the Covid-19
+              </a>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+          <div class="row p-3 ">
+            <img src="img/section_2_img.jpg" class="w-25 pr-2" alt="">
+            <div class="w-75">
+              <a href="#" class="h6 ">
+                How We Know Disinfectants Should Kill the Covid-19
+              </a>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Section -->
+      <div class="row p-4 mt-3 bg-warning">
+        <div class="row">
+          <h6 class="ml-1">TRAVEL</h6>
+        </div>
+        <div class="row">
+          <div class="row d-flex">
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+
+          <div class="row d-flex">
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+            <div class="col-6">
+              <img src="img/section_1_img_1.jpg" class="img-fluid" alt="">
+              <p>The Best Xbox 360 Co-Op Offline Split-Screen Games</p>
+              <span>July 31, 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mailchimp Form Section -->
+      <div class="row p-4 mt-3 d-flex bg-warning" style="border-top: solid .2rem;">
+        <h6 class="font-weight-bold">Mailchimp Form</h6>
+        <p>Subscribe to our mailing list to get the new updates.</p>
+        <input type="text" placeholder="Email Address" class="w-100 pl-2" style="border-style: none;">
+        <button class="w-100 mt-2 p-1 bg-danger text-white"
+          style="border-style: none; border-radius: 2%;">Subscribe</button>
+      </div>
+
+      <!-- Travel Section -->
+      <div class="row p-4 mt-3 bg-warning">
+        <div class="row">
+          <h6 class="ml-1">COMMENTS</h6>
+        </div>
+        <div class="row">
+          <div class="row d-flex mb-3">
+            <img src="img/profile.jpg" alt="" class="w-25 pr-2 img-fluid" style="border-radius: 50%;">
+            <div class="w-75">
+              <p>John Doe</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, debitis.</p>
+            </div>
+          </div>
+          <div class="row d-flex mb-3">
+            <img src="img/profile.jpg" alt="" class="w-25 pr-2 img-fluid" style="border-radius: 50%;">
+            <div class="w-75">
+              <p>John Doe</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, debitis.</p>
+            </div>
+          </div>
+          <div class="row d-flex">
+            <img src="img/profile.jpg" alt="" class="w-25 pr-2 img-fluid" style="border-radius: 50%;">
+            <div class="w-75">
+              <p>John Doe</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, debitis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Section -->
+      <div class="row p-4 mt-3 bg-warning">
+        <div class="row w-100">
+          <h6 class="ml-1">CATEGORIES</h6>
+        </div>
+        <div class="row">
+          <ul class="mt-3 mr-5" style="list-style: none;">
+            <li><a href="#" class="w-50">Gadgets</a></li>
+            <li><a href="#" class="w-50">Healthy</a></li>
+            <li><a href="#" class="w-50">Podcasts</a></li>
+            <li><a href="#" class="w-50">Reviews</a></li>
+          </ul>
+          <ul class="mt-3 ml-5" style="list-style: none;">
+            <li><a href="#" class="w-50">(6)</a></li>
+            <li><a href="#" class="w-50">(6)</a></li>
+            <li><a href="#" class="w-50">(6)</a></li>
+            <li><a href="#" class="w-50">(7)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Tags Section -->
+      <div class="row p-4 mt-3 bg-warning">
+        <div class="row w-100">
+          <h6 class="ml-1">MAIN TAGS</h6>
+        </div>
+        <div class="row">
+          <ul class="mt-3 d-flex" style="list-style: none;">
+            <li><a href="#" class="p-1 mr-1 bg-light">Cars</a></li>
+            <li><a href="#" class="p-1 mr-1 bg-light">Gadgets</a></li>
+            <li><a href="#" class="p-1 bg-light">Games</a></li>
+          </ul>
+          <ul class="d-flex" style="list-style: none;">
+            <li><a href="#" class="p-1 mr-1 bg-light"><span>Healthy</span></a></li>
+            <li><a href="#" class="p-1 mr-1 bg-light"><span>Podcasts</span></a></li>
+            <li><a href="#" class="p-1 bg-light"><span>Reviews</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JS Libraries -->
+  <style src="js/popper.min.js"></style>
+  <style src="js/bootstrap.min.js"></style>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
